@@ -7,7 +7,7 @@
     "clean": "lerna run clean",
     "build": "lerna run build",
     "pub": "lerna publish",
-    "test": "jest --watch"
+    "test": "jest --onlyChanged"
   },
   "devDependencies": {
     "lerna": "~3.14.0"
