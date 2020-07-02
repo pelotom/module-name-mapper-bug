@@ -1,3 +1,4 @@
+const path = require('path');
 const { defaults } = require('jest-config');
 // jest.config.js
 const { pathsToModuleNameMapper } = require('ts-jest/utils');
@@ -10,7 +11,7 @@ module.exports = {
 
   // moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths /*, { prefix: '<rootDir>/' } */ ),
   moduleNameMapper: {
-    '^@nighttrax/(.*)$': '<rootDir>/../$1/src'
+    '^@nighttrax/(.*)$': path.join(__dirname, 'packages/$1/src')
   },
   // resolver: 'jest-pnp-resolver',
   restoreMocks: true,
