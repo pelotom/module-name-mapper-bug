@@ -12,9 +12,6 @@
     "compile": "tsc -p tsconfig.build.json",
     "prepublishOnly": "npm run build"
   },
-  "dependencies": {
-    "@nighttrax/foo": "^1.0.0"
-  },
   "devDependencies": {
     "rimraf": "~3.0.2",
     "typescript": "~3.4.5"
