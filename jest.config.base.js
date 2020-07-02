@@ -11,7 +11,7 @@ module.exports = {
 
   // moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths /*, { prefix: '<rootDir>/' } */ ),
   moduleNameMapper: {
-    '^@nighttrax/(.*)$': path.join(__dirname, 'packages/$1/src')
+    '^@nighttrax/foo(.*)$': path.join(__dirname, 'packages/foo/src$1')
   },
   // resolver: 'jest-pnp-resolver',
   restoreMocks: true,
